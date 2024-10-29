@@ -45,6 +45,6 @@ https://github.com/SyncfusionExamples/Binding-data-with-SignalR-in-ej2-javascrip
 
 You can also refer the below resources to know more details about Syncfusion Javascript Grid components.
 
-* [Demo](https://ej2.syncfusion.com/demos/#/bootstrap/grid/over-view)
-* [Documentation](https://ej2.syncfusion.com/documentation/grid/getting-started)
+* [Demo](https://ej2.syncfusion.com/javascript/demos/#/bootstrap/grid/over-view)
+* [Documentation](https://ej2.syncfusion.com/javascript/documentation/grid/getting-started)
 * [UrlAdaptor with Syncfusion DataManager](https://ej2.syncfusion.com/javascript/documentation/grid/connecting-to-adaptors/url-adaptor)
