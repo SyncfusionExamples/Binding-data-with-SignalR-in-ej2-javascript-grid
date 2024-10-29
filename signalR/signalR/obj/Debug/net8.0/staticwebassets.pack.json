@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\ts\\js signalr\\signalR\\signalR\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "D:\\ts\\js signalr\\signalR\\signalR\\wwwroot\\js\\index.js",
+      "PackagePath": "staticwebassets\\js\\index.js"
+    },
+    {
+      "Id": "D:\\ts\\js signalr\\signalR\\signalR\\wwwroot\\js\\microsoft\\signalr\\dist\\browser\\signalr.js",
+      "PackagePath": "staticwebassets\\js\\microsoft\\signalr\\dist\\browser\\signalr.js"
+    },
+    {
+      "Id": "D:\\ts\\js signalr\\signalR\\signalR\\wwwroot\\js\\microsoft\\signalr\\dist\\browser\\signalr.min.js",
+      "PackagePath": "staticwebassets\\js\\microsoft\\signalr\\dist\\browser\\signalr.min.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.signalR.props",
+      "PackagePath": "build\\signalR.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.signalR.props",
+      "PackagePath": "buildMultiTargeting\\signalR.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.signalR.props",
+      "PackagePath": "buildTransitive\\signalR.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.signalR.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
