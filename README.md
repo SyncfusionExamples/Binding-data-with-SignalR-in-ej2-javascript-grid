@@ -47,4 +47,4 @@ You can also refer the below resources to know more details about Syncfusion Jav
 
 * [Demo](https://ej2.syncfusion.com/demos/#/bootstrap/grid/over-view)
 * [Documentation](https://ej2.syncfusion.com/documentation/grid/getting-started)
-* [UrlAdaptor with Syncfusion DataManager](https://ej2.syncfusion.com/documentation/grid/connecting-to-adaptors/url-adaptor)
+* [UrlAdaptor with Syncfusion DataManager](https://ej2.syncfusion.com/javascript/documentation/grid/connecting-to-adaptors/url-adaptor)
