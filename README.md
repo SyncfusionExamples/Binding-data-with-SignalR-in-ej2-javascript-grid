@@ -1,53 +1,47 @@
 # Binding Data with SignalR in EJ2 Javascript Grid
 
 ## Repository Description
-This repository demonstrates remote data binding for ASP.NET Core Dropdown List using Web API. It showcases fetching data dynamically and enabling server-side filtering, sorting, and pagination.
+This repository demonstrates real-time data binding integration of Microsoft SignalR with Syncfusion EJ2 Javascript Grid component, enabling seamless multi-client data synchronization with live updates in ASP.NET Core applications.
 
 ## Overview
-Remote data binding with Web API efficiently loads large datasets without requiring all data in memory, enabling real-time updates.
+SignalR integration with EJ2 Grid efficiently enables real-time bidirectional communication between server and connected clients, allowing instant data updates across all users without page refreshes.
 
 ## Features
-- Web API: connect to REST endpoints
-- Dynamic Binding: fetch from remote sources
-- Server-Side Filtering: filter data
-- Sorting: sort on the server
-- Pagination: handle large datasets
-- Real-Time Updates: dynamic content
+- SignalR Integration: real-time server-to-client communication
+- Live Data Binding: automatic grid updates from server
+- Multi-Client Synchronization: synchronized data across all connected clients
+- CRUD Operations: create, read, update, and delete operations
+- Server-Side Processing: filtering, sorting, and pagination
+- Javascript Support: fully typed components for better development
 
 ## Prerequisites
-- .NET 6.0 or higher
+- .NET 8.0 or higher
+- Node.js and npm installed
 - Visual Studio or VS Code
 - ASP.NET Core SDK
-- C# knowledge
-- REST endpoint knowledge
+- Javascript knowledge
+- SignalR client library understanding
 
 ## Installation
 1. Clone repository
 2. Navigate to project directory
-3. Run `dotnet restore`
-4. Execute `dotnet build`
-5. Run `dotnet run`
+3. Run `npm install` for frontend dependencies
+4. Run `dotnet restore` for backend packages
+5. Execute `dotnet build`
+6. Run `dotnet run`
 
 ## Usage
-Implement remote data binding:
-1. Create Web API endpoint returning JSON
-2. Configure dropdown with API URL
-3. Set filtering and sorting
-4. Handle selection events
-5. Implement pagination
+To implement real-time grid binding with SignalR:
+1. Configure SignalR hub endpoint in Program.cs
+2. Create and register SignalR hub (ChatHub)
+3. Connect grid to SignalR hub on client-side
+4. Define message handlers for grid refresh
+5. Implement CRUD endpoints in GridController
+6. Invoke SignalR notifications after CRUD operations
 
 ## Configuration
-- API Endpoint: Web API URL
-- HTTP Method: GET or POST
-- Response Format: JSON
-- Filter Parameters: query filters
-- Page Size: records per request
-- Sort Order: ascending or descending
-
-## Resources
-
-You can also refer the below resources to know more details about Syncfusion Javascript Grid components.
-
-* [Demo](https://ej2.syncfusion.com/javascript/demos/#/bootstrap/grid/over-view)
-* [Documentation](https://ej2.syncfusion.com/javascript/documentation/grid/getting-started)
-* [UrlAdaptor with Syncfusion DataManager](https://ej2.syncfusion.com/javascript/documentation/grid/connecting-to-adaptors/url-adaptor)
+- Hub Endpoint: Map SignalR hub in Program.cs (e.g., `app.MapHub<ChatHub>("/chatHub")`)
+- Hub URL: Configure client connection URL in Javascript (e.g., `https://localhost:7212/ChatHub`)
+- Connection Protocol: WebSocket (default SignalR transport)
+- Data Format: JSON serialization for messages
+- CRUD URLs: Configure DataManager URLs (insertUrl, updateUrl, removeUrl)
