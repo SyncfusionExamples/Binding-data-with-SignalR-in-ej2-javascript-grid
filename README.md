@@ -1,4 +1,4 @@
-# ASP.NET Core DropdownList Remote Binding WebAPI
+# Binding Data with SignalR in EJ2 Javascript Grid
 
 ## Repository Description
 This repository demonstrates remote data binding for ASP.NET Core Dropdown List using Web API. It showcases fetching data dynamically and enabling server-side filtering, sorting, and pagination.
