@@ -1,45 +1,48 @@
-# Binding data with SignalR in ej2 javascript grid
+# ASP.NET Core DropdownList Remote Binding WebAPI
 
-This repository demonstrates the integration of SignalR with the Syncfusion EJ2 Javascript Grid, enabling real-time data binding. This feature is especially useful for applications that need live updates and multi-client synchronization.
+## Repository Description
+This repository demonstrates remote data binding for ASP.NET Core Dropdown List using Web API. It showcases fetching data dynamically and enabling server-side filtering, sorting, and pagination.
+
+## Overview
+Remote data binding with Web API efficiently loads large datasets without requiring all data in memory, enabling real-time updates.
 
 ## Features
-
-**Real-Time Data Synchronization**: Automatically updates the grid data across all connected clients using SignalR.
-
-**Remote Data Integration:** Bind data to the Syncfusion EJ2 Grid using the DataManager adaptor.
-
-**CRUD Operations:** Implement Create, Read, Update, and Delete operations.
+- Web API: connect to REST endpoints
+- Dynamic Binding: fetch from remote sources
+- Server-Side Filtering: filter data
+- Sorting: sort on the server
+- Pagination: handle large datasets
+- Real-Time Updates: dynamic content
 
 ## Prerequisites
+- .NET 6.0 or higher
+- Visual Studio or VS Code
+- ASP.NET Core SDK
+- C# knowledge
+- REST endpoint knowledge
 
-Before you begin, ensure you have met the following requirements:
+## Installation
+1. Clone repository
+2. Navigate to project directory
+3. Run `dotnet restore`
+4. Execute `dotnet build`
+5. Run `dotnet run`
 
-* Node.js and npm installed
+## Usage
+Implement remote data binding:
+1. Create Web API endpoint returning JSON
+2. Configure dropdown with API URL
+3. Set filtering and sorting
+4. Handle selection events
+5. Implement pagination
 
-* Basic knowledge of Javascript and web development
-
-## Getting Started
-
-**1. Clone the Repository:**
-
-Use `git clone` to fetch the repository from GitHub.
-
-```bash
-https://github.com/SyncfusionExamples/Binding-data-with-SignalR-in-ej2-javascript-grid.git
-```
-
-**2. Open and Build the Project:**
-
-* Open the project in Visual Studio.
-* Build the project to restore dependencies and compile it.
-* Run the project
-
-**3. Explore the Code:**
-
-* Navigate to Javascript files (typically in src or scripts).
-* Debug and interact with the code as needed.
-
-![Adaptors](./signalR/image/signalRImage.gif)
+## Configuration
+- API Endpoint: Web API URL
+- HTTP Method: GET or POST
+- Response Format: JSON
+- Filter Parameters: query filters
+- Page Size: records per request
+- Sort Order: ascending or descending
 
 ## Resources
 
